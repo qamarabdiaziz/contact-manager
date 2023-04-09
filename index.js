@@ -12,3 +12,8 @@ function displayContacts(contact) {
       <td><button class ="update-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button></td>
       <td><button class="delete-button"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
     `;
+    // Add event listener to delete button
+    const deleteButton = tableRow.querySelector('.delete-button');
+    deleteButton.addEventListener('click', () => {
+      tableRow.remove();
+    });

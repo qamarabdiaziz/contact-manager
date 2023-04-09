@@ -136,6 +136,14 @@ document.querySelector("#contact-form").addEventListener("submit", function(even
       .catch(error => console.log(error));
       });
 
+      const cancelButton = document.querySelector('.cancel-btn');
+
+cancelButton.addEventListener('click', () => {
+  const modal = document.getElementById('myModal');
+  modal.style.display = "none";
+});
+
+
 
 
 

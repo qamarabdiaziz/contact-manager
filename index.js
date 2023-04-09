@@ -60,3 +60,16 @@ updateButton.addEventListener('click', () => {
 
       document.querySelector(".table-body").appendChild(tableRow);
   }
+
+  function fetchContacts() {
+    fetch("http://localhost:3000/Contacts")
+      .then(res => res.json())
+      .then(contacts => {
+        contacts.forEach(contact => {
+          displayContacts(contact);
+        });
+        // console.log(contacts)
+      });
+  }
+  fetchContacts()
+

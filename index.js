@@ -100,3 +100,43 @@ window.onclick = function(event) {
   }
 }
 
+//   Add event listener to contact form submit event
+document.querySelector("#contact-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+    // Create new contact object
+    const newContact = {
+      fullname: document.querySelector("#fullname").value,
+      picture: document.querySelector("#picture").value,
+      email: document.querySelector("#email").value,
+      gender: document.querySelector("#gender").value,
+      ip_address: document.querySelector("#ip_address").value,
+      phone_number: document.querySelector("#phone_number").value
+    };
+    // Add new contact to server
+    fetch("http://localhost:3000/Contacts", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(newContact)
+    })
+    .then(res => res.json())
+    .then(data => {
+      // Add new contact to table
+      displayContacts(data);
+      // Hide "Add contact" form and reset form fields
+    //   document.querySelector("#add-contact-form").classList.add("hidden");
+      document.querySelector("#fullname").value = "";
+      document.querySelector("#picture").value = "";
+      document.querySelector("#email").value = "";
+      document.querySelector("#gender").value = "";
+      document.querySelector("#ip_address").value = "";
+      document.querySelector("#phone_number").value = "";
+      })
+      .catch(error => console.log(error));
+      });
+
+
+
+
+

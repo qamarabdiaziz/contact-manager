@@ -12,4 +12,3 @@ function displayContacts(contact) {
       <td><button class ="update-btn"><i class="fa fa-pencil" aria-hidden="true"></i></button></td>
       <td><button class="delete-button"><i class="fa fa-trash" aria-hidden="true"></i></button></td>
     `;
-}

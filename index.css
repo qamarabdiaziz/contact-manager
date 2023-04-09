@@ -1,0 +1,144 @@
+
+ /*  table styling */
+ #my-contacts{
+    width: 100%;
+    padding: 30px;
+
+   }
+   .table-box table{
+    width: 100%;
+    border: 1px solid white;
+
+   }
+
+
+
+
+
+
+  .profile-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+   Style for header */
+
+
+  /* Style for search form */
+   nav form {
+    display: flex;
+    align-items: center;
+    margin: 100px;
+  } */
+
+   nav form input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid blue;
+  } */
+
+   nav form button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  } */
+
+   Style for add contact form */
+   #add-contact-form {
+    display: none;
+  }
+
+
+
+   #add-contact-form form {
+    margin-top: 20px;
+  } */
+
+   #add-contact-form form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+
+  #add-contact-form form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+   #add-contact-form form input[type="text"],
+  #add-contact-form form input[type="email"],
+  #add-contact-form form input[type="tel"],
+  #add-contact-form form select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  #add-contact-form form button[type="submit"],
+  #add-contact-form form button[type="button"] {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+
+  /* Style for contacts list */
+  #contacts {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  #contacts li {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+  } */
+
+  #contacts li img.profile-img {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
+
+  /* Style for table */
+   .table-box {
+    margin: 20px;
+  } */
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+  }
+
+  .table th,
+  .table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+
+  .table th button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  } */
+
+  .table tbody tr:hover {
+    background-color: #f5f5f5;
+  }

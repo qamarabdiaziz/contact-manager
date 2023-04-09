@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function() {
 function displayContacts(contact) {
     let tableRow = document.createElement("tr");
     tableRow.id = "table-row";
@@ -142,6 +143,8 @@ cancelButton.addEventListener('click', () => {
   const modal = document.getElementById('myModal');
   modal.style.display = "none";
 });
+
+})
 
 
 

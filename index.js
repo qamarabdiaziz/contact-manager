@@ -146,6 +146,15 @@ cancelButton.addEventListener('click', () => {
 
 })
 
+const searchQuery = document.getElementById("search-input").value.toLowerCase();
+const filteredContacts = contacts.filter((contact) =>
+  contact.name.toLowerCase().includes(searchQuery)
+);
+displayContacts(filteredContacts);
+const searchButton = document.getElementById("search-button");
+searchButton.addEventListener("click", searchContacts);
+
+
 
 
 
